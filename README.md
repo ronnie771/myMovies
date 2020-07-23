@@ -1,3 +1,3 @@
 # MyApp
 
-this is my app
+Movie DB

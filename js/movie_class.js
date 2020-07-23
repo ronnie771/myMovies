@@ -20,7 +20,7 @@ class Movie {
     <h3>${this.name}</h3>
     <div>Date: ${this.date}</div>
     <div>Score: ${this.score}</div>
-    `
+    `;
     let newBtn = document.createElement("button");
     newBtn.className = "btn btn-primary";
     newBtn.innerHTML = "More info";
@@ -29,17 +29,19 @@ class Movie {
     newBtn.addEventListener("click", () => {
       // alert(this.views);
       this.showMovieInfo();
-    })
+    });
   }
 
   showMovieInfo() {
-    document.querySelector("#id_dark").className = "dark container-fluid center";
+    document.querySelector("#id_dark").className =
+      "dark container-fluid center";
 
-    document.querySelector("#id_dark img").src = "https://image.tmdb.org/t/p/w500" + this.back;
+    document.querySelector("#id_dark img").src =
+      "https://image.tmdb.org/t/p/w500" + this.back;
 
     document.querySelector("#id_dark h2").innerHTML = this.name;
-    document.querySelector("#id_dark .views").innerHTML = "Views: " + this.views;
+    document.querySelector("#id_dark .views").innerHTML =
+      "Views: " + this.views;
     document.querySelector("#id_dark p").innerHTML = this.info;
-    // כשהחלון מופיע לשנות את המידע לפי הסרט שלחצנו עליו
   }
 }
