@@ -1,0 +1,17 @@
+https://restcountries.eu/rest/v2/name/israel?fullText=true
+
+https://restcountries.eu/rest/v2/alpha/ISR?fullText=true
+
+https://api.themoviedb.org/3/list/20?api_key=d4bc3c640586e7f90dc68d8b300247ff&language=en-US
+
+https://image.tmdb.org/t/p/w500
+
+
+title
+poster_path
+vote_average
+release_date
+overview
+vote_count
+
+backdrop_path

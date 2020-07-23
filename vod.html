@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="css/vod.css" />
+
+    <title>Document</title>
+    <script src="js/vod_main.js"></script>
+    <script src="js/movie_class.js"></script>
+  </head>
+
+  <body>
+    <div id="id_dark" class="dark container-fluid center d-none">
+      <div class="dark-box text-center">
+        <img
+          src="https://image.tmdb.org/t/p/w500/pIjnoUnXdLpROFzIRPNziPzgBUp.jpg"
+          class="w-100 mb-3"
+        />
+        <h2>Rambo 9</h2>
+        <div class="views">Views: 7000</div>
+        <p class="p-2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dicta
+          blanditiis ut amet esse nihil aspernatur omnis delectus rem? Quos vero
+          porro qui unde similique! Maiores ipsum culpa quibusdam alias?
+        </p>
+        <button onclick="onCloseDarkWindow()" class="btn btn-danger mb-3">
+          close
+        </button>
+      </div>
+    </div>
+    <div class="strip container-fluid">
+      <div class="container center">
+        <h1 class="text-white display-4">V.O.D FOR CORONA BIDOD</h1>
+      </div>
+    </div>
+    <header class="container-fluid">
+      <div class="container">
+        <div class="row justify-content-between align-items-center p-3">
+          <nav>
+            <button
+              data-cat="1"
+              onclick="onChangeCat(event)"
+              class="btn btn-warning"
+            >
+              Super hero
+            </button>
+            <button
+              data-cat="2"
+              onclick="onChangeCat(event)"
+              class="btn btn-warning"
+            >
+              Action
+            </button>
+            <button
+              data-cat="3"
+              onclick="onChangeCat(event)"
+              class="btn btn-warning"
+            >
+              Cartoon
+            </button>
+          </nav>
+          <div class="search col-lg-4 d-flex">
+            <input
+              id="id_search"
+              class="form-control mr-sm-1"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+              oninput="onSearchMovie()"
+            />
+            <select
+              id="id_sort"
+              class="form-control"
+              onchange="onSearchMovie()"
+            >
+              <option value="">Sort by...</option>
+              <option value="title">Title</option>
+              <option value="release_date">Date</option>
+              <option value="vote_average">Score</option>
+            </select>
+            <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <!-- <div class="col-lg-6 border">
+          <img src="https://image.tmdb.org/t/p/w500/dJPnTe1qOcO7XqsJvESFph83m6m.jpg" class="w-25 float-left mr-2">
+          <h3>Rambo 5</h3>
+          <div>Date: 2012-04-03</div>
+          <div>Score: 4.5</div>
+          <button class="btn btn-primary">More info</button>
+        </div> -->
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
