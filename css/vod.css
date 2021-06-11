@@ -1,10 +1,17 @@
 .container {
   min-height: inherit;
+  
 }
 
-.row {
-  min-height: inherit;
+body{
+  background-color: black;
 }
+.row {
+ 
+  min-height: inherit;
+  background-color: black;
+}
+
 
 .center {
   display: flex;
@@ -24,11 +31,14 @@
   max-width: 700px;
   min-height: 200px;
   width: 100%;
+  
   background-color: white;
   border: 2px grey solid;
+  justify-content: space-around;
 }
 
 .strip {
+  
   min-height: 300px;
   background-image: url(../images/cover_vod.jpeg);
   background-position: center;
@@ -36,7 +46,8 @@
 }
 
 .strip h1 {
-  color: #e0dfdc;
+  
+  color: white;
   letter-spacing: 0.1em;
   text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a,
     0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222,
@@ -47,6 +58,50 @@
 
 header {
   min-height: 40px;
-  background-color: white;
+  background-color: solid black;
   color: #333;
+}
+
+.col-lg-6 {
+  color: white;
+}
+
+.jumbotron{
+  font-family: 'Staatliches', cursive;
+  font-size: 10px;
+}
+.animated{
+  -webkit-animation-duration:1s;
+  animation-duration:1s;
+  -webkit-animation-fill-mode:both;
+  animation-fill-mode:both
+}
+
+@-webkit-keyframes fadeInLeft{
+  0%{
+      opacity:0;
+      -webkit-transform:translateX(-200px);
+      transform:translateX(-200px)}
+  100%{
+      opacity:1;
+      -webkit-transform:translateX(0);
+      transform:translateX(0)
+  }
+}
+@keyframes fadeInLeft{
+  0%{
+      opacity:0;
+      -webkit-transform:translateX(-200px);
+      -ms-transform:translateX(-200px);
+      transform:translateX(-200px)}
+  100%{
+      opacity:1;
+      -webkit-transform:translateX(0);
+      -ms-transform:translateX(0);
+      transform:translateX(0)
+  }
+}
+.fadeInLeft{
+  -webkit-animation-name:fadeInLeft;
+  animation-name:fadeInLeft
 }

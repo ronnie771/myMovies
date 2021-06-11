@@ -9,6 +9,8 @@
     <title>Document</title>
     <script src="js/vod_main.js"></script>
     <script src="js/movie_class.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet"> 
   </head>
 
   <body>
@@ -30,12 +32,18 @@
         </button>
       </div>
     </div>
-    <div class="strip container-fluid">
-      <div class="container center">
-        <h1 class="text-white display-4">MyMovies</h1>
-      </div>
-    </div>
-    <header class="container-fluid">
+   
+
+<div class="jumbotron " style=" color:white ; background-image: url('images/movcover.jpg'); background-size: 100%;">
+  <h1 class="display-2 animated fadeInLeft">My Movies</h1>
+  <h1 class="lead animated fadeInLeft" >Welcome!  Here you can check out the newest movie releases ,<br></br> movie ratings and summaries</h1>
+  <hr class="my-4">
+  <p class="lead">
+  </p>
+  
+</div>
+
+    <header class="container-fluid ">
       <div class="container">
         <div class="row justify-content-between align-items-center p-3">
           <nav>
@@ -60,7 +68,18 @@
             >
               Cartoon
             </button>
+            <button
+              data-cat="5"
+              onclick="onChangeCat(event)"
+              class="btn btn-warning"
+            >
+              main
+            </button>
+            
           </nav>
+          
+          
+          
           <div class="search col-lg-4 d-flex">
             <input
               id="id_search"
@@ -70,6 +89,7 @@
               aria-label="Search"
               oninput="onSearchMovie()"
             />
+            
             <select
               id="id_sort"
               class="form-control"
@@ -80,6 +100,7 @@
               <option value="release_date">Date</option>
               <option value="vote_average">Score</option>
             </select>
+            
             <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
           </div>
         </div>
